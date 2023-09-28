@@ -38,18 +38,18 @@ class CyclOPediaClassPage extends React.Component { //class based components inh
     }
 
 
-    render(){
-        console.log("Render Component")
-        return(<div>
-            {this.state.instructor && (
-                <div className='p-3'>
-                    <span className='h4 text-success'>Instructor</span> 
-                    <i className='bi bi-toggle-off btn btn-success btn-sm'></i>
-                    <br/>
+    render(){ 
+        console.log("Render Component") 
+        return(<div> 
+            {this.state.instructor && ( 
+                <div className='p-3'> 
+                    <span className='h4 text-success'>Instructor</span>  
+                    <i className='bi bi-toggle-off btn btn-success btn-sm'></i> 
+                    <br/> 
                     Name: {this.state.instructor.name}
-                    <br/>
+                    <br/> 
                     Email: {this.state.instructor.email}
-                    <br/>
+                    <br/> 
                     Phone: {this.state.instructor.phone}
                     <br/>
                 </div>
